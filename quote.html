@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Quote | AC-Master Service</title>
+  <meta name="description" content="Request a free, no-obligation quote for AC repair, cleaning, or installation. Fast response within 5 minutes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__wrapper">
+    <a href="index.html" class="logo">AC<span>MASTER</span></a>
+    <a href="index.html" class="nav__link">← Back to Home</a>
+  </div>
+</header>
+
+<main class="container quote-page">
+  <div class="quote-grid">
+
+    <div class="quote-content">
+      <span class="hero__badge">Free Consultation</span>
+      <h1 class="section-title">Get Your Free <br>Service Quote</h1>
+      <p class="hero__desc">Fill out the form to get a transparent price estimate. No hidden fees, no obligations.</p>
+
+      <ul class="benefit-list">
+        <li class="benefit-item">
+          <strong>Fast Response:</strong> We'll call you back within 5-10 minutes.
+        </li>
+        <li class="benefit-item">
+          <strong>Expert Advice:</strong> Professional diagnostics from certified techs.
+        </li>
+        <li class="benefit-item">
+          <strong>Best Price:</strong> Competitive rates for all AC brands.
+        </li>
+      </ul>
+    </div>
+
+    <div class="quote-form-container">
+      <form id="js-quote-form" class="form">
+        <div class="form__group">
+          <label class="form__label">Full Name</label>
+          <input type="text" name="name" placeholder="John Doe" required class="form__input">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Phone Number</label>
+          <input type="tel" name="phone" placeholder="+1 (___) ___-____" required class="form__input">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Service Type</label>
+          <select name="service" class="form__input">
+            <option value="cleaning">Deep Cleaning</option>
+            <option value="repair">Emergency Repair</option>
+            <option value="refill">Freon Refill</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Brief Description (Optional)</label>
+          <textarea name="message" placeholder="Describe your issue..." class="form__input" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--submit">Send Request Now</button>
+        <p class="form__note">By clicking, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 AC-Master Pro. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -4,7 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get a Free Quote | AC-Master Service</title>
-  <meta name="description" content="Request a free, no-obligation quote for AC repair, cleaning, or installation. Fast response within 5 minutes.">
+  <meta name="description" content="Request a free, no-obligation quote for AC repair, cleaning, or installation in your location. Fast response within 5-10 minutes from certified HVAC specialists.">
+
+  <link rel="canonical" href="https://yourdomain.com/quote.html">
+
+  <meta property="og:title" content="Get a Free Quote | AC-Master Service">
+  <meta property="og:description" content="Get a transparent price estimate for your AC service. Fast response, no hidden fees.">
+  <meta property="og:image" content="https://yourdomain.com/images/og-quote.jpg">
+  <meta property="og:url" content="https://yourdomain.com/quote.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/c5f47b84bbcfadae6e3371cef958d4ff/script.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,60 +30,77 @@
 <header class="header">
   <div class="container header__wrapper">
     <a href="index.html" class="logo">AC<span>MASTER</span></a>
-    <a href="index.html" class="nav__link">← Back to Home</a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="index.html#services" class="nav__link">Services</a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="quote.html" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <button class="burger" id="js-burger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-<main class="container quote-page">
-  <div class="quote-grid">
+<main class="container quote-page" style="padding-top: 60px; padding-bottom: 80px;">
+  <div class="quote-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 60px; align-items: start;">
 
     <div class="quote-content">
       <span class="hero__badge">Free Consultation</span>
-      <h1 class="section-title">Get Your Free <br>Service Quote</h1>
-      <p class="hero__desc">Fill out the form to get a transparent price estimate. No hidden fees, no obligations.</p>
+      <h1 class="page-title" style="margin-bottom: 20px;">Get Your Free <br>Service Quote</h1>
+      <p class="hero__desc" style="margin-bottom: 30px;">Fill out the form to get a transparent price estimate. No hidden fees, no obligations.</p>
 
-      <ul class="benefit-list">
-        <li class="benefit-item">
-          <strong>Fast Response:</strong> We'll call you back within 5-10 minutes.
-        </li>
-        <li class="benefit-item">
-          <strong>Expert Advice:</strong> Professional diagnostics from certified techs.
-        </li>
-        <li class="benefit-item">
-          <strong>Best Price:</strong> Competitive rates for all AC brands.
-        </li>
+      <ul class="benefit-list" style="list-style: none; padding: 0; margin-bottom: 40px;">
+        <li style="margin-bottom: 15px;"><strong>✅ Fast Response:</strong> We'll call you back within 5-10 minutes.</li>
+        <li style="margin-bottom: 15px;"><strong>✅ Expert Advice:</strong> Professional diagnostics from certified techs.</li>
+        <li style="margin-bottom: 15px;"><strong>✅ Best Price:</strong> Competitive rates for all AC brands.</li>
       </ul>
+
+      <div class="contact-info-box" style="background: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0;">
+        <h3 style="margin-bottom: 15px;">Direct Contact</h3>
+        <p style="margin-bottom: 8px;"><strong>📍 Address:</strong> your location, US (Service Area)</p>
+        <p style="margin-bottom: 8px;"><strong>📞 Phone:</strong> <a href="tel:+1234567890" style="color: #2563eb;">+1 234 567 890</a></p>
+        <p><strong>✉️ Email:</strong> <a href="mailto:support@yourdomain.com" style="color: #2563eb;">support@yourdomain.com</a></p>
+      </div>
     </div>
 
-    <div class="quote-form-container">
+    <div class="quote-form-container" style="background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
       <form id="js-quote-form" class="form">
-        <div class="form__group">
-          <label class="form__label">Full Name</label>
-          <input type="text" name="name" placeholder="John Doe" required class="form__input">
+        <div class="form__group" style="margin-bottom: 20px;">
+          <label class="form__label" style="display: block; margin-bottom: 8px; font-weight: 600;">Full Name</label>
+          <input type="text" name="name" placeholder="John Doe" required class="form__input" style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
         </div>
 
-        <div class="form__group">
-          <label class="form__label">Phone Number</label>
-          <input type="tel" name="phone" placeholder="+1 (___) ___-____" required class="form__input">
+        <div class="form__group" style="margin-bottom: 20px;">
+          <label class="form__label" style="display: block; margin-bottom: 8px; font-weight: 600;">Phone Number</label>
+          <input type="tel" name="phone" placeholder="+1 (___) ___-____" required class="form__input" style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;">
         </div>
 
-        <div class="form__group">
-          <label class="form__label">Service Type</label>
-          <select name="service" class="form__input">
+        <div class="form__group" style="margin-bottom: 20px;">
+          <label class="form__label" style="display: block; margin-bottom: 8px; font-weight: 600;">Service Type</label>
+          <select name="service" class="form__input" style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;">
             <option value="cleaning">Deep Cleaning</option>
             <option value="repair">Emergency Repair</option>
             <option value="refill">Freon Refill</option>
+            <option value="installation">New Installation</option>
             <option value="other">Other / Not Sure</option>
           </select>
         </div>
 
-        <div class="form__group">
-          <label class="form__label">Brief Description (Optional)</label>
-          <textarea name="message" placeholder="Describe your issue..." class="form__input" rows="3"></textarea>
+        <div class="form__group" style="margin-bottom: 25px;">
+          <label class="form__label" style="display: block; margin-bottom: 8px; font-weight: 600;">Brief Description (Optional)</label>
+          <textarea name="message" placeholder="Describe your issue..." class="form__input" rows="3" style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;"></textarea>
         </div>
 
-        <button type="submit" class="btn btn--submit">Send Request Now</button>
-        <p class="form__note">By clicking, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        <button type="submit" class="btn btn--primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">Send Request Now</button>
+        <p class="form__note" style="margin-top: 15px; font-size: 0.85rem; color: #64748b; text-align: center;">
+          By clicking, you agree to our <a href="privacy.html" style="color: #2563eb;">Privacy Policy</a>.
+        </p>
       </form>
     </div>
 
@@ -77,8 +108,14 @@
 </main>
 
 <footer class="footer">
-  <div class="container">
+  <div class="container footer__wrapper">
     <p>&copy; 2026 AC-Master Pro. All rights reserved.</p>
+    <nav class="footer__links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="about.html">About Us</a>
+      <a href="quote.html">Contact</a>
+    </nav>
   </div>
 </footer>
 

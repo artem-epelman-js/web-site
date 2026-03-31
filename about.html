@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | AC-Master Professional Cooling Services</title>
-    <meta name="description" content="Learn about AC-Master's journey. We are a team of certified HVAC technicians with over 10 years of experience in AC repair and maintenance.">
+    <meta name="description" content="Learn about AC-Master's journey. We are a team of certified HVAC technicians with over 10 years of experience in AC repair and maintenance in your location.">
+
+    <link rel="canonical" href="https://yourdomain.com/about.html">
+
+    <meta property="og:title" content="About Us | AC-Master Professional Cooling Services">
+    <meta property="og:description" content="Learn about AC-Master's journey. Over 10 years of experience in AC repair and maintenance.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-about.jpg">
+    <meta property="og:url" content="https://yourdomain.com/about.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/c5f47b84bbcfadae6e3371cef958d4ff/script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +32,18 @@
         <a href="index.html" class="logo">AC<span>MASTER</span></a>
         <nav class="nav">
             <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Home</a></li>
                 <li><a href="index.html#services" class="nav__link">Services</a></li>
-                <li><a href="contact.html" class="nav__link">Contact</a></li>
+                <li><a href="blog.html" class="nav__link">Blog</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="quote.html" class="nav__link">Contact</a></li>
             </ul>
         </nav>
+        <div class="header__actions">
+            <button class="burger" id="js-burger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
 </header>
 
@@ -37,7 +59,7 @@
         <div class="container about-grid">
             <div class="about-text">
                 <h2>Our Journey</h2>
-                <p>AC-Master began with a simple mission: to provide honest, high-quality air conditioning services at fair prices. What started as a small family-run operation has grown into a **team of certified technicians with over 10 years of experience** in the HVAC industry.</p>
+                <p>AC-Master began with a simple mission: to provide honest, high-quality air conditioning services at fair prices. What started as a small family-run operation has grown into a <strong>team of certified technicians with over 10 years of experience</strong> in the HVAC industry.</p>
 
                 <p>We understand that a broken AC is more than just an inconvenience—it's a matter of health and home comfort. That’s why we’ve spent the last decade refining our skills, investing in professional-grade diagnostics, and building a reputation for punctuality and transparency.</p>
 
@@ -58,9 +80,11 @@
             </div>
 
             <div class="about-visual">
-                <div class="img-placeholder img-placeholder--about-page">
-                    <span>Photo of our certified technician team at work</span>
-                </div>
+                <img src="public/Our%20certified%20technician%20team%20at%20work%20performing%20AC%20maintenance.jpg"
+                     alt="Our certified technician team at work performing AC maintenance"
+                     width="600" height="400"
+                     style="width: 100%; height: auto; border-radius: 12px; object-fit: cover;"
+                     loading="lazy">
             </div>
         </div>
     </section>
@@ -88,13 +112,16 @@
 
 <footer class="footer">
     <div class="container footer__wrapper">
-        <p>&copy; 2026 AC-Master Pro. Helping you stay cool since 2016.</p>
+        <p>&copy; 2026 AC-Master Pro. All rights reserved.</p>
         <nav class="footer__links">
             <a href="privacy.html">Privacy Policy</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="about.html">About Us</a>
+            <a href="quote.html">Contact</a>
         </nav>
     </div>
 </footer>
 
+<script src="index.js"></script>
 </body>
 </html>

@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Conditioning Tips & Insights | AC-Master Blog</title>
     <meta name="description" content="Expert advice on AC maintenance, energy saving tips, and repair guides. Read our latest articles to keep your home cool and healthy.">
+
+    <link rel="canonical" href="https://yourdomain.com/blog.html">
+
+    <meta property="og:title" content="Air Conditioning Tips & Insights | AC-Master Blog">
+    <meta property="og:description" content="Expert advice on AC maintenance, energy saving tips, and repair guides.">
+    <meta property="og:image" content="https://yourdomain.com/images/og-blog.jpg">
+    <meta property="og:url" content="https://yourdomain.com/blog.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/c5f47b84bbcfadae6e3371cef958d4ff/script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -19,80 +34,87 @@
             <ul class="nav__list">
                 <li><a href="index.html" class="nav__link">Home</a></li>
                 <li><a href="index.html#services" class="nav__link">Services</a></li>
-                <li><a href="quote.html" class="nav__link">Get a Quote</a></li>
+                <li><a href="blog.html" class="nav__link">Blog</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="quote.html" class="nav__link">Contact</a></li>
             </ul>
         </nav>
+        <div class="header__actions">
+            <button class="burger" id="js-burger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </div>
 </header>
 
 <main class="container blog-page">
-    <header class="blog-header">
+    <header class="blog-header" style="margin-top: 40px; text-align: center; margin-bottom: 60px;">
         <span class="hero__badge">Expert Advice</span>
-        <h1 class="section-title">Latest Cooling Insights</h1>
-        <p class="hero__desc">Stay informed with professional tips on HVAC maintenance, energy efficiency, and repair guides.</p>
+        <h1 class="page-title">Latest Cooling Insights</h1>
+        <p class="hero__desc" style="max-width: 700px; margin: 20px auto;">Stay informed with professional tips on HVAC maintenance, energy efficiency, and repair guides.</p>
     </header>
 
-    <div class="blog-grid">
+    <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
 
         <article class="blog-card">
-            <div class="img-placeholder img-placeholder--service"><span>Image: Summer AC Prep</span></div>
-            <div class="blog-card__meta">March 25, 2026 • Maintenance</div>
-            <h2 class="blog-card__title">How to Prepare Your AC for the Summer Heat</h2>
-            <p class="blog-card__excerpt">As temperatures begin to rise, preparing your AC isn't just about comfort; it's about preventing a mid-July breakdown when technicians are busiest...</p>
-            <div class="blog-card__content">
-                <p>First, replace your air filters. A clogged filter restricts airflow and forces the motor to work overtime. Second, clear the area around your outdoor condenser unit. Remove dried leaves, weeds, or debris that might block heat dissipation. Third, test your thermostat by switching it to cooling mode early in the season.</p>
-            </div>
+            <img src="public/How%20to%20Prepare%20Your%20AC%20for%20the%20Summer%20Heat%20blog.jpg"
+                 alt="Preparing AC unit for summer heat" width="400" height="250" loading="lazy" style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
+            <div class="blog-card__meta" style="font-size: 14px; color: #64748b; margin-bottom: 10px;">March 25, 2026 • Maintenance</div>
+            <h2 class="blog-card__title" style="font-size: 20px; margin-bottom: 15px;">How to Prepare Your AC for the Summer Heat</h2>
+            <p class="blog-card__excerpt">As temperatures begin to rise, preparing your AC isn't just about comfort; it's about preventing a mid-July breakdown...</p>
+            <a href="blog/prepare-ac-for-summer.html" class="nav__link" style="color: #2563eb; display: inline-block; margin-top: 10px; font-weight: 600;">Read Full Article →</a>
         </article>
 
         <article class="blog-card">
-            <div class="img-placeholder img-placeholder--service"><span>Image: Freon Leak Signs</span></div>
-            <div class="blog-card__meta">March 20, 2026 • Repairs</div>
-            <h2 class="blog-card__title">5 Signs Your Air Conditioner Needs a Freon Refill</h2>
-            <p class="blog-card__excerpt">Refrigerant (Freon) is the lifeblood of your AC. If it's low, you likely have a leak. Learn how to spot the signs before your unit stops cooling entirely.</p>
-            <div class="blog-card__content">
-                <ul>
-                    <li><strong>Air isn't cold:</strong> The most obvious sign of low refrigerant.</li>
-                    <li><strong>Ice on coils:</strong> Low levels cause the evaporator coil to freeze.</li>
-                    <li><strong>Hissing noises:</strong> Often indicates a gas leak in the copper lines.</li>
-                    <li><strong>High bills:</strong> The AC runs longer to reach target temperatures.</li>
-                </ul>
-            </div>
+            <img src="public/5%20Signs%20Your%20Air%20Conditioner%20Needs%20a%20Freon%20Refill%20blog.jpg"
+                 alt="Technician checking AC refrigerant levels" width="400" height="250" loading="lazy" style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
+            <div class="blog-card__meta" style="font-size: 14px; color: #64748b; margin-bottom: 10px;">March 20, 2026 • Repairs</div>
+            <h2 class="blog-card__title" style="font-size: 20px; margin-bottom: 15px;">7 Signs Your Air Conditioner Needs a Freon Refill</h2>
+            <p class="blog-card__excerpt">Refrigerant is the lifeblood of your AC. Learn how to spot the signs before your unit stops cooling entirely.</p>
+            <a href="blog/freon-leak.html" class="nav__link" style="color: #2563eb; display: inline-block; margin-top: 10px; font-weight: 600;">Read Full Article →</a>
         </article>
 
         <article class="blog-card">
-            <div class="img-placeholder img-placeholder--service"><span>Image: Maintenance Benefits</span></div>
-            <div class="blog-card__meta">March 15, 2026 • Expert Tips</div>
-            <h2 class="blog-card__title">Top Benefits of Regular AC Maintenance</h2>
-            <p class="blog-card__excerpt">Skipping annual maintenance might seem like a way to save money, but it often leads to much higher costs down the road.</p>
-            <div class="blog-card__content">
-                <p>Regular professional check-ups provide three major advantages: extended equipment lifespan (fixing small issues before they destroy the compressor), improved air quality (preventing mold spores), and significant energy savings by keeping the unit at its peak SEER rating.</p>
-            </div>
+            <img src="public/Top%20Benefits%20of%20Regular%20AC%20Maintenance%20blog.jpg"
+                 alt="Benefits of regular AC maintenance" width="400" height="250" loading="lazy" style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
+            <div class="blog-card__meta" style="font-size: 14px; color: #64748b; margin-bottom: 10px;">March 15, 2026 • Expert Tips</div>
+            <h2 class="blog-card__title" style="font-size: 20px; margin-bottom: 15px;">Top Benefits of Regular AC Maintenance</h2>
+            <p class="blog-card__excerpt">Skipping annual maintenance might seem like a way to save money, but it often leads to much higher costs.</p>
+            <a href="blog/benefits-of-maintenance.html" class="nav__link" style="color: #2563eb; display: inline-block; margin-top: 10px; font-weight: 600;">Read Full Article →</a>
         </article>
 
         <article class="blog-card">
-            <div class="img-placeholder img-placeholder--service"><span>Image: Water Leaking AC</span></div>
-            <div class="blog-card__meta">March 10, 2026 • Troubleshooting</div>
-            <h2 class="blog-card__title">Why Your AC is Leaking Water: Common Causes</h2>
-            <p class="blog-card__excerpt">Finding a puddle under your indoor unit can be alarming. The most common culprit is a clogged condensate drain line.</p>
-            <div class="blog-card__content">
-                <p>Over time, algae and dust form a sludge that blocks the pipe, forcing water to back up. Other causes include a damaged drain pan in older units or a dirty evaporator coil that causes the unit to freeze and then drip excessive amounts of water as it melts.</p>
-            </div>
+            <img src="public/Troubleshooting%20AC%20water%20leak%20blog.jpg"
+                 alt="Troubleshooting AC water leak" width="400" height="250" loading="lazy" style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
+            <div class="blog-card__meta" style="font-size: 14px; color: #64748b; margin-bottom: 10px;">March 10, 2026 • Troubleshooting</div>
+            <h2 class="blog-card__title" style="font-size: 20px; margin-bottom: 15px;">Why Your AC is Leaking Water: Common Causes</h2>
+            <p class="blog-card__excerpt">Finding a puddle under your indoor unit can be alarming. The most common culprit is a clogged drain line.</p>
+            <a href="blog/ac-leaking-water.html" class="nav__link" style="color: #2563eb; display: inline-block; margin-top: 10px; font-weight: 600;">Read Full Article →</a>
         </article>
 
     </div>
 
-    <section class="blog-cta">
-        <div class="sidebar__card">
+    <section class="blog-cta" style="margin-top: 60px; margin-bottom: 80px;">
+        <div class="sidebar__card" style="background: #f8fafc; padding: 40px; border-radius: 16px; text-align: center; border: 1px solid #e2e8f0;">
             <h3>Need Professional Help?</h3>
-            <p>Don't wait for a breakdown. Get a professional diagnostic visit today.</p>
-            <a href="quote.html" class="btn btn--primary" style="width: 100%; text-align: center;">Get a Free Quote</a>
+            <p style="margin-bottom: 25px;">Don't wait for a breakdown. Get a professional diagnostic visit today.</p>
+            <a href="quote.html" class="btn btn--primary">Get a Free Quote</a>
         </div>
     </section>
 </main>
 
 <footer class="footer">
-    <div class="container"><p>&copy; 2026 AC-Master. <a href="index.html">Home</a> • <a href="privacy.html">Privacy</a></p></div>
+    <div class="container footer__wrapper">
+        <p>&copy; 2026 AC-Master Pro. All rights reserved.</p>
+        <nav class="footer__links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="about.html">About Us</a>
+            <a href="quote.html">Contact</a>
+        </nav>
+    </div>
 </footer>
 
+<script src="index.js"></script>
 </body>
 </html>
